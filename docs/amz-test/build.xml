@@ -1,0 +1,75 @@
+<!--
+/******************************************************************************* 
+ *  Copyright 2008 Amazon Technologies, Inc.
+ *  Licensed under the Apache License, Version 2.0 (the "License"); 
+ *  
+ *  You may not use this file except in compliance with the License. 
+ *  You may obtain a copy of the License at: http://aws.amazon.com/apache2.0
+ *  This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+ *  CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+ *  specific language governing permissions and limitations under the License.
+ * ***************************************************************************** 
+ *  Marketplace Web Service Java Library
+ *  API Version: 2009-01-01
+ *  Generated: Fri Feb 20 09:52:14 PST 2009 
+ * 
+ */
+
+
+-->
+<project name="Marketplace Web Service Java Library" default="dist" basedir=".">
+    <description>Auto generated ANT file for building AWS libraries</description>
+    <property name="lib.name" value="marketplace-web-service-2009-01-01-java-library"/>
+    <property name="java.src.dir" value="src" />
+    <property name="build.root"   value="build" />
+    <property name="build.dir"    value="build/classes" />
+    <property name="dist.dir"     value="dist" />
+    <property name="thirdparty.lib.dir" value="third-party"/>
+    <path id="classpath.base">
+        <fileset dir="${thirdparty.lib.dir}">
+            <include name="**/*.jar"/>
+        </fileset>
+        <pathelement path="${build.dir}"/>
+    </path>
+    <target name="init" description="Set up environment to build">
+        <tstamp/>
+        <echo>Creating the build directory structure</echo>
+        <mkdir dir="${build.dir}"/>
+    </target>
+    <target name="build" depends="init,properties"
+          description="Compile main source tree java files">
+        <echo>Building...</echo>
+        <javac destdir="${build.dir}">
+            <src path="${java.src.dir}"/>
+            <classpath refid="classpath.base"/>
+        </javac>
+        <echo>Library build complete.</echo>
+        <echo>To run the samples, add your AWS Access Keys to a file </echo>
+        <echo>in the src/.../samples/ directory and uncomment the desired action (look for "@TODO")</echo>
+    </target>
+    <target name="properties"
+          description="Copy XML and Properties files to classes/">
+        <copy todir="${build.dir}" preservelastmodified="true">
+            <fileset dir="${java.src.dir}">
+                <include name="**/*.xml"/>
+                <include name="**/*.properties"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="dist" description="generate the distribution" depends="build">
+        <echo>Creating the distribution directory</echo>
+        <mkdir dir="${dist.dir}/lib"/>
+        <jar jarfile="${dist.dir}/lib/${lib.name}.jar"
+         basedir="${build.dir}"
+         excludes="**/samples/*.class" />
+    </target>
+    <target name="clean" description="clean up" >
+        <delete dir="${build.root}"/>
+        <delete dir="${dist.dir}"/>
+        <delete verbose="true">
+            <fileset dir="." defaultexcludes="no">
+                <include name="**/*~"/>
+            </fileset>
+        </delete>
+    </target>
+</project>
