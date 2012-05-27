@@ -30,6 +30,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
 import com.amazonaws.mws.*;
 import com.amazonaws.mws.model.*;
 import com.amazonaws.mws.mock.MarketplaceWebServiceMock;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 
 /**
  * 
@@ -38,6 +40,8 @@ import com.amazonaws.mws.mock.MarketplaceWebServiceMock;
  * 
  */
 public class SubmitFeedSample {
+    
+    static final Log log = LogFactory.getLog(SubmitFeedSample.class);
 
     /**
      * Just add a few required parameters, and try the service Submit Feed
@@ -55,11 +59,10 @@ public class SubmitFeedSample {
          * Access Key ID and Secret Access Key ID, obtained from:
          * http://aws.amazon.com
          ***********************************************************************/
-        final String accessKeyId = "<Your Access Key ID>";
-        final String secretAccessKey = "<Your Secret Access Key>";
-
-        final String appName = "<Your Application or Company Name>";
-        final String appVersion = "<Your Application Version or Build Number or Release Date>";
+        final String accessKeyId = "AKIAJDR2N32XSM5HT2ZQ";
+        final String secretAccessKey = "7vkW22RPy7zdTQST3T37yDfW1bFOzoPbRooBiosg";
+        final String appName = "test_app";
+        final String appVersion = "1.0";
 
         MarketplaceWebServiceConfig config = new MarketplaceWebServiceConfig();
 
@@ -81,7 +84,7 @@ public class SubmitFeedSample {
         // China
         // config.setServiceURL("https://mws.amazonservices.com.cn");
         // Canada
-        // config.setServiceURL("https://mws.amazonservices.ca");
+        config.setServiceURL("https://mws.amazonservices.ca");
         // India
         // config.setServiceURL("https://mws.amazonservices.in");
 
@@ -111,7 +114,7 @@ public class SubmitFeedSample {
          * Marketplace and Merchant IDs are required parameters for all
          * Marketplace Web Service calls.
          ***********************************************************************/
-        final String merchantId = "<Your Merchant ID>";
+        final String merchantId = "AAHKV2X7AFYLW";
         // marketplaces to which this feed will be submitted; look at the
         // API reference document on the MWS website to see which marketplaces are
         // included if you do not specify the list yourself
@@ -123,7 +126,7 @@ public class SubmitFeedSample {
         request.setMerchant(merchantId);
         request.setMarketplaceIdList(marketplaces);
 
-        request.setFeedType("<Feed Type>");
+        request.setFeedType("_POST_PRODUCTION_DATA_");
 
         // MWS exclusively offers a streaming interface for uploading your
         // feeds. This is because
@@ -255,6 +258,7 @@ public class SubmitFeedSample {
         } catch (MarketplaceWebServiceException ex) {
 
             System.out.println("Caught Exception: " + ex.getMessage());
+            log.error("", ex);
             System.out.println("Response Status Code: " + ex.getStatusCode());
             System.out.println("Error Code: " + ex.getErrorCode());
             System.out.println("Error Type: " + ex.getErrorType());
