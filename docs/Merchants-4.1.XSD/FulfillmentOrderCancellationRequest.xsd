@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Revision="$Revision: #1 $" -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <!--
+    $Date: 2007/01/18 $
+
+    AMAZON.COM CONFIDENTIAL.  This document and the information contained in it are
+    confidential and proprietary information of Amazon.com and may not be reproduced,
+    distributed or used, in whole or in part, for any purpose other than as necessary
+    to list products for sale on the www.amazon.com web site pursuant to an agreement
+    with Amazon.com.
+    -->
+  <xsd:include schemaLocation="amzn-base.xsd"/>
+  <xsd:element name="FulfillmentOrderCancellationRequest">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="MerchantFulfillmentOrderID" type="FortyStringNotNull"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

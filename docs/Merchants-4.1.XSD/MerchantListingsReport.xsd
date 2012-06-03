@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!-- Revision="$Revision: #1 $" -->
+<!-- Merchant Listing Report Version="1.0" -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!--
+    $Date: 2007/02/01 $
+
+    AMAZON.COM CONFIDENTIAL.  This document and the information contained in it are
+    confidential and proprietary information of Amazon.com and may not be reproduced,
+    distributed or used, in whole or in part, for any purpose other than as necessary
+    to list products for sale on the www.amazon.com web site pursuant to an agreement
+    with Amazon.com.
+    -->
+	<xsd:element name="MerchantsListingReport">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Header"/>
+				<xsd:element name="Listing">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="ItemName" type="xsd:string"/>
+							<xsd:element name="ItemDescription" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="ListingId" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="SellerSku" type="xsd:string"/>
+							<xsd:element name="Price" type="BaseCurrencyAmount"/>
+							<xsd:element name="Quantity" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="OpenDate" type="tns:MLRDateTime"/>
+							<xsd:element name="ImageUrl" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="ItemIsMarketplace" type="xsd:string"/>
+							<xsd:element name="ProductIdType" type="xsd:integer"/>
+							<xsd:element name="ZshopShippingFee" type="xsd:integer" minOccurs="0"/>
+							<xsd:element name="ItemNote" type="xsd:string"/>
+							<xsd:element name="ItemCondition" type="xsd:integer"/>
+							<xsd:element name="ZshopCategory1" type="xsd:integer" minOccurs="0"/>
+							<xsd:element name="ZshopBrowsePath" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="ZshopStorefrontFeature" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="ASIN1" type="xsd:string"/>
+							<xsd:element name="ASIN2" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="ASIN3" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="WillShipInternationally" type="xsd:string"/>
+							<xsd:element name="ExpeditedShipping" type="xsd:string"/>
+							<xsd:element name="ZshopBoldface" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="ProductId" type="xsd:string"/>
+							<xsd:element name="BidForFeaturedPlacement" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="AddDelete" type="xsd:string" minOccurs="0"/>
+							<xsd:element name="PendingQuantity" type="xsd:nonNegativeInteger"/>
+							<xsd:element name="FulfillmentChannel" type="xsd:string"/>
+						</xsd:sequence>
+					</xsd:complexType>
+				</xsd:element>
+				<xsd:element name="Footer"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:simpleType name="MLRDateTime">
+		<xsd:restriction base="xsd:token">
+			<xsd:pattern value="((19|2[0-9])\d\d)-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01]) (0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9] ([PMCE][DS]T|GMT|((GMT)?[-+]([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]))"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="BaseCurrencyAmount">
+		<xsd:restriction base="xsd:decimal">
+			<xsd:totalDigits value="20"/>
+			<xsd:fractionDigits value="2" fixed="true"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>
