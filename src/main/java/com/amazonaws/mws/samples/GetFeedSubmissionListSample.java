@@ -15,47 +15,30 @@
  * 
  */
 
+
 package com.amazonaws.mws.samples;
 
-import java.io.ByteArrayInputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.Arrays;
-import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.ArrayList;
-
-import javax.xml.datatype.DatatypeConfigurationException;
-import javax.xml.datatype.DatatypeFactory;
-import javax.xml.datatype.XMLGregorianCalendar;
-
 import com.amazonaws.mws.*;
 import com.amazonaws.mws.model.*;
 import com.amazonaws.mws.mock.MarketplaceWebServiceMock;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 /**
- * 
- * Submit Feed Samples
- * 
- * 
+ *
+ * Get Feed Submission List  Samples
+ *
+ *
  */
-public class SubmitFeedSample {
-    
-    static final Log log = LogFactory.getLog(SubmitFeedSample.class);
+public class GetFeedSubmissionListSample {
 
     /**
-     * Just add a few required parameters, and try the service Submit Feed
-     * functionality
-     * 
-     * @param args
-     *            unused
+     * Just add a few required parameters, and try the service
+     * Get Feed Submission List functionality
+     *
+     * @param args unused
      */
-    /**
-     * @param args
-     */
-    public static void main(String... args) throws FileNotFoundException {
+    public static void main(String... args) {
 
         /************************************************************************
          * Access Key ID and Secret Access Key ID, obtained from:
@@ -86,7 +69,7 @@ public class SubmitFeedSample {
         // China
         config.setServiceURL("https://mws.amazonservices.com.cn");
         // Canada
-//        config.setServiceURL("https://mws.amazonservices.ca");
+        // config.setServiceURL("https://mws.amazonservices.ca");
         // India
         // config.setServiceURL("https://mws.amazonservices.in");
 
@@ -105,161 +88,140 @@ public class SubmitFeedSample {
 
         MarketplaceWebService service = new MarketplaceWebServiceClient(
                 accessKeyId, secretAccessKey, appName, appVersion, config);
+        // MarketplaceWebServiceConfig config = new MarketplaceWebServiceConfig();
 
+        // MarketplaceWebService service = new MarketplaceWebServiceClient(accessKeyId, secretAccessKey, config);
 
         /************************************************************************
-         * Setup request parameters and uncomment invoke to try out sample for
-         * Submit Feed
+         * Uncomment to try out Mock Service that simulates Marketplace Web Service 
+         * responses without calling Marketplace Web Service  service.
+         *
+         * Responses are loaded from local XML files. You can tweak XML files to
+         * experiment with various outputs during development
+         *
+         * XML files available under com/amazonaws/mws/mock tree
+         *
+         ***********************************************************************/
+        // MarketplaceWebService service = new MarketplaceWebServiceMock();
+
+        /************************************************************************
+         * Setup request parameters and uncomment invoke to try out 
+         * sample for Get Feed Submission List 
          ***********************************************************************/
 
         /************************************************************************
-         * Marketplace and Merchant IDs are required parameters for all
+         * Marketplace and Merchant IDs are required parameters for all 
          * Marketplace Web Service calls.
          ***********************************************************************/
         final String merchantId = "AAHKV2X7AFYLW";
-        // marketplaces to which this feed will be submitted; look at the
-        // API reference document on the MWS website to see which marketplaces are
-        // included if you do not specify the list yourself
-        final IdList marketplaces = new IdList(Arrays.asList(
-        		"Marketplae1",
-        		"Marketplace2"));
 
-        SubmitFeedRequest request = new SubmitFeedRequest();
-        request.setMerchant(merchantId);
-//        request.setMarketplaceIdList(marketplaces);
+        GetFeedSubmissionListRequest request = new GetFeedSubmissionListRequest();
+        request.setMerchant( merchantId );
 
-        request.setFeedType("_POST_ITEM_DATA_");
+        // @TODO: set request parameters here
 
-        // MWS exclusively offers a streaming interface for uploading your
-        // feeds. This is because
-        // feed sizes can grow to the 1GB+ range - and as your business grows
-        // you could otherwise
-        // silently reach the feed size where your in-memory solution will no
-        // longer work, leaving you
-        // puzzled as to why a solution that worked for a long time suddenly
-        // stopped working though
-        // you made no changes. For the same reason, we strongly encourage you
-        // to generate your feeds to
-        // local disk then upload them directly from disk to MWS via Java -
-        // without buffering them in Java
-        // memory in their entirety.
-        // Note: MarketplaceWebServiceClient will not retry a submit feed request
-        // because there is no way to reset the InputStream from our client. 
-        // To enable retry, recreate the InputStream and resubmit the feed
-        // with the new InputStream. 
-        //
-        request.setFeedContent( new FileInputStream("tmp_file.xml"));
-
-        invokeSubmitFeed(service, request);
+        invokeGetFeedSubmissionList(service, request);
 
     }
 
+
+
     /**
-     * Submit Feed request sample Uploads a file for processing together with
-     * the necessary metadata to process the file, such as which type of feed it
-     * is. PurgeAndReplace if true means that your existing e.g. inventory is
-     * wiped out and replace with the contents of this feed - use with caution
-     * (the default is false).
-     * 
-     * @param service
-     *            instance of MarketplaceWebService service
-     * @param request
-     *            Action to invoke
+     * Get Feed Submission List  request sample
+     * returns a list of feed submission identifiers and their associated metadata
+     *   
+     * @param service instance of MarketplaceWebService service
+     * @param request Action to invoke
      */
-    public static void invokeSubmitFeed(MarketplaceWebService service,
-            SubmitFeedRequest request) {
+    public static void invokeGetFeedSubmissionList(MarketplaceWebService service, GetFeedSubmissionListRequest request) {
         try {
 
-            SubmitFeedResponse response = service.submitFeed(request);
+            GetFeedSubmissionListResponse response = service.getFeedSubmissionList(request);
 
-            System.out.println("SubmitFeed Action Response");
-            System.out
-            .println("=============================================================================");
-            System.out.println();
 
-            System.out.print("    SubmitFeedResponse");
+            System.out.println ("GetFeedSubmissionList Action Response");
+            System.out.println ("=============================================================================");
+            System.out.println ();
+
+            System.out.print("    GetFeedSubmissionListResponse");
             System.out.println();
-            if (response.isSetSubmitFeedResult()) {
-                System.out.print("        SubmitFeedResult");
+            if (response.isSetGetFeedSubmissionListResult()) {
+                System.out.print("        GetFeedSubmissionListResult");
                 System.out.println();
-                SubmitFeedResult submitFeedResult = response
-                .getSubmitFeedResult();
-                if (submitFeedResult.isSetFeedSubmissionInfo()) {
+                GetFeedSubmissionListResult  getFeedSubmissionListResult = response.getGetFeedSubmissionListResult();
+                if (getFeedSubmissionListResult.isSetNextToken()) {
+                    System.out.print("            NextToken");
+                    System.out.println();
+                    System.out.print("                " + getFeedSubmissionListResult.getNextToken());
+                    System.out.println();
+                }
+                if (getFeedSubmissionListResult.isSetHasNext()) {
+                    System.out.print("            HasNext");
+                    System.out.println();
+                    System.out.print("                " + getFeedSubmissionListResult.isHasNext());
+                    System.out.println();
+                }
+                List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionListResult.getFeedSubmissionInfoList();
+                for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
                     System.out.print("            FeedSubmissionInfo");
                     System.out.println();
-                    FeedSubmissionInfo feedSubmissionInfo = submitFeedResult
-                    .getFeedSubmissionInfo();
                     if (feedSubmissionInfo.isSetFeedSubmissionId()) {
                         System.out.print("                FeedSubmissionId");
                         System.out.println();
-                        System.out.print("                    "
-                                + feedSubmissionInfo.getFeedSubmissionId());
+                        System.out.print("                    " + feedSubmissionInfo.getFeedSubmissionId());
                         System.out.println();
                     }
                     if (feedSubmissionInfo.isSetFeedType()) {
                         System.out.print("                FeedType");
                         System.out.println();
-                        System.out.print("                    "
-                                + feedSubmissionInfo.getFeedType());
+                        System.out.print("                    " + feedSubmissionInfo.getFeedType());
                         System.out.println();
                     }
                     if (feedSubmissionInfo.isSetSubmittedDate()) {
                         System.out.print("                SubmittedDate");
                         System.out.println();
-                        System.out.print("                    "
-                                + feedSubmissionInfo.getSubmittedDate());
+                        System.out.print("                    " + feedSubmissionInfo.getSubmittedDate());
                         System.out.println();
                     }
                     if (feedSubmissionInfo.isSetFeedProcessingStatus()) {
-                        System.out
-                        .print("                FeedProcessingStatus");
+                        System.out.print("                FeedProcessingStatus");
                         System.out.println();
-                        System.out.print("                    "
-                                + feedSubmissionInfo.getFeedProcessingStatus());
+                        System.out.print("                    " + feedSubmissionInfo.getFeedProcessingStatus());
                         System.out.println();
                     }
                     if (feedSubmissionInfo.isSetStartedProcessingDate()) {
-                        System.out
-                        .print("                StartedProcessingDate");
+                        System.out.print("                StartedProcessingDate");
                         System.out.println();
-                        System.out
-                        .print("                    "
-                                + feedSubmissionInfo
-                                .getStartedProcessingDate());
+                        System.out.print("                    " + feedSubmissionInfo.getStartedProcessingDate());
                         System.out.println();
                     }
                     if (feedSubmissionInfo.isSetCompletedProcessingDate()) {
-                        System.out
-                        .print("                CompletedProcessingDate");
+                        System.out.print("                CompletedProcessingDate");
                         System.out.println();
-                        System.out.print("                    "
-                                + feedSubmissionInfo
-                                .getCompletedProcessingDate());
+                        System.out.print("                    " + feedSubmissionInfo.getCompletedProcessingDate());
                         System.out.println();
                     }
                 }
-            }
+            } 
             if (response.isSetResponseMetadata()) {
                 System.out.print("        ResponseMetadata");
                 System.out.println();
-                ResponseMetadata responseMetadata = response
-                .getResponseMetadata();
+                ResponseMetadata  responseMetadata = response.getResponseMetadata();
                 if (responseMetadata.isSetRequestId()) {
                     System.out.print("            RequestId");
                     System.out.println();
-                    System.out.print("                "
-                            + responseMetadata.getRequestId());
+                    System.out.print("                " + responseMetadata.getRequestId());
                     System.out.println();
                 }
-            }
+            } 
+            System.out.println();
             System.out.println(response.getResponseHeaderMetadata());
             System.out.println();
-            System.out.println();
+
 
         } catch (MarketplaceWebServiceException ex) {
 
             System.out.println("Caught Exception: " + ex.getMessage());
-            log.error("", ex);
             System.out.println("Response Status Code: " + ex.getStatusCode());
             System.out.println("Error Code: " + ex.getErrorCode());
             System.out.println("Error Type: " + ex.getErrorType());
