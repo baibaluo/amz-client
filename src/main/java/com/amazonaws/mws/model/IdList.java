@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -128,7 +129,7 @@ public class IdList {
      */
     protected String toXMLFragment() {
         StringBuffer xml = new StringBuffer();
-        List<String> idList  =  getId();
+        java.util.List<String> idList  =  getId();
         for (String id : idList) { 
             xml.append("<Id>");
             xml.append(escapeXML(id));
@@ -186,7 +187,7 @@ public class IdList {
         if (isSetId()) {
             if (!first) json.append(", ");
             json.append("\"Id\" : [");
-            List<String> idList  =  getId();
+            java.util.List<String> idList  =  getId();
             for (String id : idList) {
                 if (idList.indexOf(id) > 0) json.append(", ");
                     json.append(quoteJSON(id));

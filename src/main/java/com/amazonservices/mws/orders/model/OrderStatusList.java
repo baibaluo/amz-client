@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class OrderStatusList {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonservices.mws.orders.model.OrderStatusEnum }
+     * {@link OrderStatusEnum }
      * 
      * 
      */
@@ -110,7 +111,7 @@ public class OrderStatusList {
      * 
      * @param status
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.OrderStatusEnum }
+     *     {@link OrderStatusEnum }
      *     
      */
     public void setStatus(List<OrderStatusEnum> status) {

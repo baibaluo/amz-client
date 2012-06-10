@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -132,7 +133,7 @@ public class GetFeedSubmissionListByNextTokenResult {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonaws.mws.model.FeedSubmissionInfo }
+     * {@link FeedSubmissionInfo }
      * 
      * 
      */
@@ -194,7 +195,7 @@ public class GetFeedSubmissionListByNextTokenResult {
      * 
      * @param feedSubmissionInfoList
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.FeedSubmissionInfo }
+     *     {@link FeedSubmissionInfo }
      *     
      */
     public void setFeedSubmissionInfoList(List<FeedSubmissionInfo> feedSubmissionInfoList) {
@@ -222,7 +223,7 @@ public class GetFeedSubmissionListByNextTokenResult {
             xml.append(isHasNext() + "");
             xml.append("</HasNext>");
         }
-        List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionInfoList();
+        java.util.List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionInfoList();
         for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
             xml.append("<FeedSubmissionInfo>");
             xml.append(feedSubmissionInfo.toXMLFragment());
@@ -294,7 +295,7 @@ public class GetFeedSubmissionListByNextTokenResult {
         if (isSetFeedSubmissionInfoList()) {
             if (!first) json.append(", ");
             json.append("\"FeedSubmissionInfo\" : [");
-            List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionInfoList();
+            java.util.List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionInfoList();
             for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
                 if (feedSubmissionInfoList.indexOf(feedSubmissionInfo) > 0) json.append(", ");
                 json.append("{");

@@ -20,6 +20,7 @@
  */
 
 
+
 package com.amazonservices.mws.orders.mock;
 
 import javax.xml.bind.JAXBContext;
@@ -95,7 +96,7 @@ public  class MarketplaceWebServiceOrdersMock implements MarketplaceWebServiceOr
      * @return
      *          ListOrdersByNextToken Response from the service
      *
-     * @throws com.amazonservices.mws.orders.MarketplaceWebServiceOrdersException
+     * @throws MarketplaceWebServiceOrdersException
      */
     public ListOrdersByNextTokenResponse listOrdersByNextToken(ListOrdersByNextTokenRequest request)
         throws MarketplaceWebServiceOrdersException {
@@ -125,7 +126,7 @@ public  class MarketplaceWebServiceOrdersMock implements MarketplaceWebServiceOr
      * @return
      *          ListOrderItemsByNextToken Response from the service
      *
-     * @throws com.amazonservices.mws.orders.MarketplaceWebServiceOrdersException
+     * @throws MarketplaceWebServiceOrdersException
      */
     public ListOrderItemsByNextTokenResponse listOrderItemsByNextToken(ListOrderItemsByNextTokenRequest request)
         throws MarketplaceWebServiceOrdersException {
@@ -153,7 +154,7 @@ public  class MarketplaceWebServiceOrdersMock implements MarketplaceWebServiceOr
      * @return
      *          GetOrder Response from the service
      *
-     * @throws com.amazonservices.mws.orders.MarketplaceWebServiceOrdersException
+     * @throws MarketplaceWebServiceOrdersException
      */
     public GetOrderResponse getOrder(GetOrderRequest request)
         throws MarketplaceWebServiceOrdersException {
@@ -182,7 +183,7 @@ public  class MarketplaceWebServiceOrdersMock implements MarketplaceWebServiceOr
      * @return
      *          ListOrderItems Response from the service
      *
-     * @throws com.amazonservices.mws.orders.MarketplaceWebServiceOrdersException
+     * @throws MarketplaceWebServiceOrdersException
      */
     public ListOrderItemsResponse listOrderItems(ListOrderItemsRequest request)
         throws MarketplaceWebServiceOrdersException {
@@ -210,7 +211,7 @@ public  class MarketplaceWebServiceOrdersMock implements MarketplaceWebServiceOr
      * @return
      *          ListOrders Response from the service
      *
-     * @throws com.amazonservices.mws.orders.MarketplaceWebServiceOrdersException
+     * @throws MarketplaceWebServiceOrdersException
      */
     public ListOrdersResponse listOrders(ListOrdersRequest request)
         throws MarketplaceWebServiceOrdersException {
@@ -240,7 +241,7 @@ public  class MarketplaceWebServiceOrdersMock implements MarketplaceWebServiceOr
      * @return
      *          GetServiceStatus Response from the service
      *
-     * @throws com.amazonservices.mws.orders.MarketplaceWebServiceOrdersException
+     * @throws MarketplaceWebServiceOrdersException
      */
     public GetServiceStatusResponse getServiceStatus(GetServiceStatusRequest request)
         throws MarketplaceWebServiceOrdersException {

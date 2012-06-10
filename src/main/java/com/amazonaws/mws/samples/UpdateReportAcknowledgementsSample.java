@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -153,7 +154,7 @@ public class UpdateReportAcknowledgementsSample {
                     System.out.print("                " + updateReportAcknowledgementsResult.getCount());
                     System.out.println();
                 }
-                List<ReportInfo> reportInfoList = updateReportAcknowledgementsResult.getReportInfoList();
+                java.util.List<ReportInfo> reportInfoList = updateReportAcknowledgementsResult.getReportInfoList();
                 for (ReportInfo reportInfo : reportInfoList) {
                     System.out.print("            ReportInfo");
                     System.out.println();

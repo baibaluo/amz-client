@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws;
 
 import com.amazonaws.mws.model.*;
@@ -1345,7 +1346,7 @@ public interface  MarketplaceWebService {
      *
      * @throws MarketplaceWebServiceException
      */
-    public SubmitFeedResponse submitFeedFromFile(SubmitFeedRequest request)
+    public SubmitFeedResponse submitFeedFromFile( SubmitFeedRequest request )
       throws MarketplaceWebServiceException;
     
     /**

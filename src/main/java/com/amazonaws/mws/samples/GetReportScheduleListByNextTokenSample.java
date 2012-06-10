@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -159,7 +160,7 @@ public class GetReportScheduleListByNextTokenSample {
                     System.out.print("                " + getReportScheduleListByNextTokenResult.isHasNext());
                     System.out.println();
                 }
-                List<ReportSchedule> reportScheduleList = getReportScheduleListByNextTokenResult.getReportScheduleList();
+                java.util.List<ReportSchedule> reportScheduleList = getReportScheduleListByNextTokenResult.getReportScheduleList();
                 for (ReportSchedule reportSchedule : reportScheduleList) {
                     System.out.print("            ReportSchedule");
                     System.out.println();

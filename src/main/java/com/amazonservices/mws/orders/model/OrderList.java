@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class OrderList {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonservices.mws.orders.model.Order }
+     * {@link Order }
      * 
      * 
      */
@@ -110,7 +111,7 @@ public class OrderList {
      * 
      * @param order
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Order }
+     *     {@link Order }
      *     
      */
     public void setOrder(List<Order> order) {

@@ -15,6 +15,7 @@
  */
 
 
+
 package com.amazonaws.mws.model;
 
 import java.util.List;

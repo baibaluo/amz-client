@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.io.OutputStream;

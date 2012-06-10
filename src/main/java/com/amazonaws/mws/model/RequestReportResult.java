@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -59,7 +60,7 @@ public class RequestReportResult {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonaws.mws.model.ReportRequestInfo }
+     *     {@link ReportRequestInfo }
      *     
      */
     public ReportRequestInfo getReportRequestInfo() {
@@ -71,7 +72,7 @@ public class RequestReportResult {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.ReportRequestInfo }
+     *     {@link ReportRequestInfo }
      *     
      */
     public void setReportRequestInfo(ReportRequestInfo value) {

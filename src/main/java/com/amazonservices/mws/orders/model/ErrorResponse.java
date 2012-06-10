@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import java.util.ArrayList;
@@ -79,7 +80,7 @@ public class ErrorResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonservices.mws.orders.model.Error }
+     * {@link Error }
      * 
      * 
      */
@@ -157,7 +158,7 @@ public class ErrorResponse {
      * 
      * @param error
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Error }
+     *     {@link Error }
      *     
      */
     public void setError(List<Error> error) {

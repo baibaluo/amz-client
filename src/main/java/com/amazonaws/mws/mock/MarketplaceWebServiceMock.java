@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.mock;
 
 import com.amazonaws.mws.model.*;
@@ -97,7 +98,7 @@ public  class MarketplaceWebServiceMock implements MarketplaceWebService {
      * @return
      *          GetReport Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportResponse getReport(GetReportRequest request)
         throws MarketplaceWebServiceException {
@@ -135,7 +136,7 @@ GetReportRequest request) {
      * @return
      *          GetReportScheduleCount Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportScheduleCountResponse getReportScheduleCount(GetReportScheduleCountRequest request)
         throws MarketplaceWebServiceException {
@@ -173,7 +174,7 @@ GetReportScheduleCountRequest request) {
      * @return
      *          GetReportRequestListByNextToken Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportRequestListByNextTokenResponse getReportRequestListByNextToken(GetReportRequestListByNextTokenRequest request)
         throws MarketplaceWebServiceException {
@@ -211,7 +212,7 @@ GetReportRequestListByNextTokenRequest request) {
      * @return
      *          UpdateReportAcknowledgements Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public UpdateReportAcknowledgementsResponse updateReportAcknowledgements(UpdateReportAcknowledgementsRequest request)
         throws MarketplaceWebServiceException {
@@ -253,7 +254,7 @@ UpdateReportAcknowledgementsRequest request) {
      * @return
      *          SubmitFeed Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public SubmitFeedResponse submitFeed(SubmitFeedRequest request)
         throws MarketplaceWebServiceException {
@@ -300,7 +301,7 @@ SubmitFeedRequest request) {
      * @return
      *          SubmitFeed Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public SubmitFeedResponse submitFeedFromFile(SubmitFeedRequest request)
         throws MarketplaceWebServiceException {
@@ -340,7 +341,7 @@ SubmitFeedRequest request) {
      * @return
      *          GetReportCount Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportCountResponse getReportCount(GetReportCountRequest request)
         throws MarketplaceWebServiceException {
@@ -378,7 +379,7 @@ GetReportCountRequest request) {
      * @return
      *          GetFeedSubmissionListByNextToken Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetFeedSubmissionListByNextTokenResponse getFeedSubmissionListByNextToken(GetFeedSubmissionListByNextTokenRequest request)
         throws MarketplaceWebServiceException {
@@ -417,7 +418,7 @@ GetFeedSubmissionListByNextTokenRequest request) {
      * @return
      *          CancelFeedSubmissions Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public CancelFeedSubmissionsResponse cancelFeedSubmissions(CancelFeedSubmissionsRequest request)
         throws MarketplaceWebServiceException {
@@ -455,7 +456,7 @@ CancelFeedSubmissionsRequest request) {
      * @return
      *          RequestReport Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public RequestReportResponse requestReport(RequestReportRequest request)
         throws MarketplaceWebServiceException {
@@ -493,7 +494,7 @@ RequestReportRequest request) {
      * @return
      *          GetFeedSubmissionCount Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetFeedSubmissionCountResponse getFeedSubmissionCount(GetFeedSubmissionCountRequest request)
         throws MarketplaceWebServiceException {
@@ -532,7 +533,7 @@ GetFeedSubmissionCountRequest request) {
      * @return
      *          CancelReportRequests Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public CancelReportRequestsResponse cancelReportRequests(CancelReportRequestsRequest request)
         throws MarketplaceWebServiceException {
@@ -571,7 +572,7 @@ CancelReportRequestsRequest request) {
      * @return
      *          GetReportList Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportListResponse getReportList(GetReportListRequest request)
         throws MarketplaceWebServiceException {
@@ -609,7 +610,7 @@ GetReportListRequest request) {
      * @return
      *          GetFeedSubmissionResult Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetFeedSubmissionResultResponse getFeedSubmissionResult(GetFeedSubmissionResultRequest request)
         throws MarketplaceWebServiceException {
@@ -647,7 +648,7 @@ GetFeedSubmissionResultRequest request) {
      * @return
      *          GetFeedSubmissionList Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetFeedSubmissionListResponse getFeedSubmissionList(GetFeedSubmissionListRequest request)
         throws MarketplaceWebServiceException {
@@ -685,7 +686,7 @@ GetFeedSubmissionListRequest request) {
      * @return
      *          GetReportRequestList Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportRequestListResponse getReportRequestList(GetReportRequestListRequest request)
         throws MarketplaceWebServiceException {
@@ -723,7 +724,7 @@ GetReportRequestListRequest request) {
      * @return
      *          GetReportScheduleListByNextToken Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportScheduleListByNextTokenResponse getReportScheduleListByNextToken(GetReportScheduleListByNextTokenRequest request)
         throws MarketplaceWebServiceException {
@@ -761,7 +762,7 @@ GetReportScheduleListByNextTokenRequest request) {
      * @return
      *          GetReportListByNextToken Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportListByNextTokenResponse getReportListByNextToken(GetReportListByNextTokenRequest request)
         throws MarketplaceWebServiceException {
@@ -800,7 +801,7 @@ GetReportListByNextTokenRequest request) {
      * @return
      *          ManageReportSchedule Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public ManageReportScheduleResponse manageReportSchedule(ManageReportScheduleRequest request)
         throws MarketplaceWebServiceException {
@@ -839,7 +840,7 @@ ManageReportScheduleRequest request) {
      * @return
      *          GetReportRequestCount Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportRequestCountResponse getReportRequestCount(GetReportRequestCountRequest request)
         throws MarketplaceWebServiceException {
@@ -877,7 +878,7 @@ GetReportRequestCountRequest request) {
      * @return
      *          GetReportScheduleList Response from the service
      *
-     * @throws com.amazonaws.mws.MarketplaceWebServiceException
+     * @throws MarketplaceWebServiceException
      */
     public GetReportScheduleListResponse getReportScheduleList(GetReportScheduleListRequest request)
         throws MarketplaceWebServiceException {

@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -154,7 +155,7 @@ public class ManageReportScheduleSample {
                     System.out.print("                " + manageReportScheduleResult.getCount());
                     System.out.println();
                 }
-                List<ReportSchedule> reportScheduleList = manageReportScheduleResult.getReportScheduleList();
+                java.util.List<ReportSchedule> reportScheduleList = manageReportScheduleResult.getReportScheduleList();
                 for (ReportSchedule reportSchedule : reportScheduleList) {
                     System.out.print("            ReportSchedule");
                     System.out.println();

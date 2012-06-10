@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -159,7 +160,7 @@ public class GetReportScheduleListSample {
                     System.out.print("                " + getReportScheduleListResult.isHasNext());
                     System.out.println();
                 }
-                List<ReportSchedule> reportScheduleList = getReportScheduleListResult.getReportScheduleList();
+                java.util.List<ReportSchedule> reportScheduleList = getReportScheduleListResult.getReportScheduleList();
                 for (ReportSchedule reportSchedule : reportScheduleList) {
                     System.out.print("            ReportSchedule");
                     System.out.println();

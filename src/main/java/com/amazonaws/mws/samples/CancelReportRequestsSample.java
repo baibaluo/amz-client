@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -155,7 +156,7 @@ public class CancelReportRequestsSample {
                     System.out.print("                " + cancelReportRequestsResult.getCount());
                     System.out.println();
                 }
-                List<ReportRequestInfo> reportRequestInfoList = cancelReportRequestsResult.getReportRequestInfoList();
+                java.util.List<ReportRequestInfo> reportRequestInfoList = cancelReportRequestsResult.getReportRequestInfoList();
                 for (ReportRequestInfo reportRequestInfo : reportRequestInfoList) {
                     System.out.print("            ReportRequestInfo");
                     System.out.println();

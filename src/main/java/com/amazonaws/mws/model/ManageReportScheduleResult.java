@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -172,7 +173,7 @@ public class ManageReportScheduleResult {
             xml.append(getCount() + "");
             xml.append("</Count>");
         }
-        List<ReportSchedule> reportScheduleList = getReportScheduleList();
+        java.util.List<ReportSchedule> reportScheduleList = getReportScheduleList();
         for (ReportSchedule reportSchedule : reportScheduleList) {
             xml.append("<ReportSchedule>");
             xml.append(reportSchedule.toXMLFragment());
@@ -237,7 +238,7 @@ public class ManageReportScheduleResult {
         if (isSetReportScheduleList()) {
             if (!first) json.append(", ");
             json.append("\"ReportSchedule\" : [");
-            List<ReportSchedule> reportScheduleList = getReportScheduleList();
+            java.util.List<ReportSchedule> reportScheduleList = getReportScheduleList();
             for (ReportSchedule reportSchedule : reportScheduleList) {
                 if (reportScheduleList.indexOf(reportSchedule) > 0) json.append(", ");
                 json.append("{");

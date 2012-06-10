@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlRegistry;
@@ -53,7 +54,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionCountResponse }
+     * Create an instance of {@link GetFeedSubmissionCountResponse }
      * 
      */
     public GetFeedSubmissionCountResponse createGetFeedSubmissionCountResponse() {
@@ -61,7 +62,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleCountRequest }
+     * Create an instance of {@link GetReportScheduleCountRequest }
      * 
      */
     public GetReportScheduleCountRequest createGetReportScheduleCountRequest() {
@@ -69,7 +70,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestCountRequest }
+     * Create an instance of {@link GetReportRequestCountRequest }
      * 
      */
     public GetReportRequestCountRequest createGetReportRequestCountRequest() {
@@ -85,7 +86,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionCountResult }
+     * Create an instance of {@link GetFeedSubmissionCountResult }
      * 
      */
     public GetFeedSubmissionCountResult createGetFeedSubmissionCountResult() {
@@ -93,7 +94,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.CancelFeedSubmissionsResult }
+     * Create an instance of {@link CancelFeedSubmissionsResult }
      * 
      */
     public CancelFeedSubmissionsResult createCancelFeedSubmissionsResult() {
@@ -101,7 +102,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportListByNextTokenRequest }
+     * Create an instance of {@link GetReportListByNextTokenRequest }
      * 
      */
     public GetReportListByNextTokenRequest createGetReportListByNextTokenRequest() {
@@ -109,7 +110,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionListByNextTokenResult }
+     * Create an instance of {@link GetFeedSubmissionListByNextTokenResult }
      * 
      */
     public GetFeedSubmissionListByNextTokenResult createGetFeedSubmissionListByNextTokenResult() {
@@ -117,7 +118,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionListByNextTokenRequest }
+     * Create an instance of {@link GetFeedSubmissionListByNextTokenRequest }
      * 
      */
     public GetFeedSubmissionListByNextTokenRequest createGetFeedSubmissionListByNextTokenRequest() {
@@ -125,7 +126,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestListByNextTokenResponse }
+     * Create an instance of {@link GetReportRequestListByNextTokenResponse }
      * 
      */
     public GetReportRequestListByNextTokenResponse createGetReportRequestListByNextTokenResponse() {
@@ -133,7 +134,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.ManageReportScheduleRequest }
+     * Create an instance of {@link ManageReportScheduleRequest }
      * 
      */
     public ManageReportScheduleRequest createManageReportScheduleRequest() {
@@ -165,7 +166,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionListResult }
+     * Create an instance of {@link GetFeedSubmissionListResult }
      * 
      */
     public GetFeedSubmissionListResult createGetFeedSubmissionListResult() {
@@ -173,7 +174,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionResultResult }
+     * Create an instance of {@link GetFeedSubmissionResultResult }
      * 
      */
     public GetFeedSubmissionResultResult createGetFeedSubmissionResultResult() {
@@ -181,7 +182,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.FeedSubmissionInfo }
+     * Create an instance of {@link FeedSubmissionInfo }
      * 
      */
     public FeedSubmissionInfo createFeedSubmissionInfo() {
@@ -189,7 +190,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestListResponse }
+     * Create an instance of {@link GetReportRequestListResponse }
      * 
      */
     public GetReportRequestListResponse createGetReportRequestListResponse() {
@@ -205,7 +206,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleListResult }
+     * Create an instance of {@link GetReportScheduleListResult }
      * 
      */
     public GetReportScheduleListResult createGetReportScheduleListResult() {
@@ -213,7 +214,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.IdList }
+     * Create an instance of {@link IdList }
      * 
      */
     public IdList createIdList() {
@@ -229,7 +230,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionCountRequest }
+     * Create an instance of {@link GetFeedSubmissionCountRequest }
      * 
      */
     public GetFeedSubmissionCountRequest createGetFeedSubmissionCountRequest() {
@@ -245,7 +246,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleCountResult }
+     * Create an instance of {@link GetReportScheduleCountResult }
      * 
      */
     public GetReportScheduleCountResult createGetReportScheduleCountResult() {
@@ -253,7 +254,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionResultRequest }
+     * Create an instance of {@link GetFeedSubmissionResultRequest }
      * 
      */
     public GetFeedSubmissionResultRequest createGetFeedSubmissionResultRequest() {
@@ -261,7 +262,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionListRequest }
+     * Create an instance of {@link GetFeedSubmissionListRequest }
      * 
      */
     public GetFeedSubmissionListRequest createGetFeedSubmissionListRequest() {
@@ -269,7 +270,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestCountResponse }
+     * Create an instance of {@link GetReportRequestCountResponse }
      * 
      */
     public GetReportRequestCountResponse createGetReportRequestCountResponse() {
@@ -285,7 +286,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.ManageReportScheduleResponse }
+     * Create an instance of {@link ManageReportScheduleResponse }
      * 
      */
     public ManageReportScheduleResponse createManageReportScheduleResponse() {
@@ -293,7 +294,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleListByNextTokenResult }
+     * Create an instance of {@link GetReportScheduleListByNextTokenResult }
      * 
      */
     public GetReportScheduleListByNextTokenResult createGetReportScheduleListByNextTokenResult() {
@@ -309,7 +310,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestListResult }
+     * Create an instance of {@link GetReportRequestListResult }
      * 
      */
     public GetReportRequestListResult createGetReportRequestListResult() {
@@ -317,7 +318,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestCountResult }
+     * Create an instance of {@link GetReportRequestCountResult }
      * 
      */
     public GetReportRequestCountResult createGetReportRequestCountResult() {
@@ -325,7 +326,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportListRequest }
+     * Create an instance of {@link GetReportListRequest }
      * 
      */
     public GetReportListRequest createGetReportListRequest() {
@@ -333,7 +334,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestListByNextTokenRequest }
+     * Create an instance of {@link GetReportRequestListByNextTokenRequest }
      * 
      */
     public GetReportRequestListByNextTokenRequest createGetReportRequestListByNextTokenRequest() {
@@ -341,7 +342,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportListResponse }
+     * Create an instance of {@link GetReportListResponse }
      * 
      */
     public GetReportListResponse createGetReportListResponse() {
@@ -349,7 +350,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportResponse }
+     * Create an instance of {@link GetReportResponse }
      * 
      */
     public GetReportResponse createGetReportResponse() {
@@ -365,7 +366,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.Error }
+     * Create an instance of {@link Error }
      * 
      */
     public Error createError() {
@@ -373,7 +374,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.Error.Detail }
+     * Create an instance of {@link Error.Detail }
      * 
      */
     public Error.Detail createErrorDetail() {
@@ -381,7 +382,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleListResponse }
+     * Create an instance of {@link GetReportScheduleListResponse }
      * 
      */
     public GetReportScheduleListResponse createGetReportScheduleListResponse() {
@@ -389,7 +390,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.CancelFeedSubmissionsResponse }
+     * Create an instance of {@link CancelFeedSubmissionsResponse }
      * 
      */
     public CancelFeedSubmissionsResponse createCancelFeedSubmissionsResponse() {
@@ -397,7 +398,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionResultResponse }
+     * Create an instance of {@link GetFeedSubmissionResultResponse }
      * 
      */
     public GetFeedSubmissionResultResponse createGetFeedSubmissionResultResponse() {
@@ -405,7 +406,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportListResult }
+     * Create an instance of {@link GetReportListResult }
      * 
      */
     public GetReportListResult createGetReportListResult() {
@@ -413,7 +414,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionListResponse }
+     * Create an instance of {@link GetFeedSubmissionListResponse }
      * 
      */
     public GetFeedSubmissionListResponse createGetFeedSubmissionListResponse() {
@@ -421,7 +422,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequest }
+     * Create an instance of {@link GetReportRequest }
      * 
      */
     public GetReportRequest createGetReportRequest() {
@@ -429,7 +430,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportCountResponse }
+     * Create an instance of {@link GetReportCountResponse }
      * 
      */
     public GetReportCountResponse createGetReportCountResponse() {
@@ -437,7 +438,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.ErrorResponse }
+     * Create an instance of {@link ErrorResponse }
      * 
      */
     public ErrorResponse createErrorResponse() {
@@ -445,7 +446,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleListRequest }
+     * Create an instance of {@link GetReportScheduleListRequest }
      * 
      */
     public GetReportScheduleListRequest createGetReportScheduleListRequest() {
@@ -453,7 +454,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestListByNextTokenResult }
+     * Create an instance of {@link GetReportRequestListByNextTokenResult }
      * 
      */
     public GetReportRequestListByNextTokenResult createGetReportRequestListByNextTokenResult() {
@@ -461,7 +462,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportRequestListRequest }
+     * Create an instance of {@link GetReportRequestListRequest }
      * 
      */
     public GetReportRequestListRequest createGetReportRequestListRequest() {
@@ -469,7 +470,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportListByNextTokenResult }
+     * Create an instance of {@link GetReportListByNextTokenResult }
      * 
      */
     public GetReportListByNextTokenResult createGetReportListByNextTokenResult() {
@@ -477,7 +478,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.CancelReportRequestsResult }
+     * Create an instance of {@link CancelReportRequestsResult }
      * 
      */
     public CancelReportRequestsResult createCancelReportRequestsResult() {
@@ -485,7 +486,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportCountRequest }
+     * Create an instance of {@link GetReportCountRequest }
      * 
      */
     public GetReportCountRequest createGetReportCountRequest() {
@@ -493,7 +494,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleListByNextTokenRequest }
+     * Create an instance of {@link GetReportScheduleListByNextTokenRequest }
      * 
      */
     public GetReportScheduleListByNextTokenRequest createGetReportScheduleListByNextTokenRequest() {
@@ -501,7 +502,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.CancelFeedSubmissionsRequest }
+     * Create an instance of {@link CancelFeedSubmissionsRequest }
      * 
      */
     public CancelFeedSubmissionsRequest createCancelFeedSubmissionsRequest() {
@@ -509,7 +510,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetFeedSubmissionListByNextTokenResponse }
+     * Create an instance of {@link GetFeedSubmissionListByNextTokenResponse }
      * 
      */
     public GetFeedSubmissionListByNextTokenResponse createGetFeedSubmissionListByNextTokenResponse() {
@@ -525,7 +526,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.CancelReportRequestsRequest }
+     * Create an instance of {@link CancelReportRequestsRequest }
      * 
      */
     public CancelReportRequestsRequest createCancelReportRequestsRequest() {
@@ -533,7 +534,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportCountResult }
+     * Create an instance of {@link GetReportCountResult }
      * 
      */
     public GetReportCountResult createGetReportCountResult() {
@@ -549,7 +550,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleListByNextTokenResponse }
+     * Create an instance of {@link GetReportScheduleListByNextTokenResponse }
      * 
      */
     public GetReportScheduleListByNextTokenResponse createGetReportScheduleListByNextTokenResponse() {
@@ -557,7 +558,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportListByNextTokenResponse }
+     * Create an instance of {@link GetReportListByNextTokenResponse }
      * 
      */
     public GetReportListByNextTokenResponse createGetReportListByNextTokenResponse() {
@@ -565,7 +566,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportScheduleCountResponse }
+     * Create an instance of {@link GetReportScheduleCountResponse }
      * 
      */
     public GetReportScheduleCountResponse createGetReportScheduleCountResponse() {
@@ -573,7 +574,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.GetReportResult }
+     * Create an instance of {@link GetReportResult }
      * 
      */
     public GetReportResult createGetReportResult() {
@@ -581,7 +582,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.CancelReportRequestsResponse }
+     * Create an instance of {@link CancelReportRequestsResponse }
      * 
      */
     public CancelReportRequestsResponse createCancelReportRequestsResponse() {
@@ -589,7 +590,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonaws.mws.model.ManageReportScheduleResult }
+     * Create an instance of {@link ManageReportScheduleResult }
      * 
      */
     public ManageReportScheduleResult createManageReportScheduleResult() {

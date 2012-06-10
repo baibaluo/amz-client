@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -198,7 +199,7 @@ public class FeedSubmissionInfo {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getStartedProcessingDate() {
@@ -210,7 +211,7 @@ public class FeedSubmissionInfo {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setStartedProcessingDate(XMLGregorianCalendar value) {
@@ -226,7 +227,7 @@ public class FeedSubmissionInfo {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getCompletedProcessingDate() {
@@ -238,7 +239,7 @@ public class FeedSubmissionInfo {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setCompletedProcessingDate(XMLGregorianCalendar value) {

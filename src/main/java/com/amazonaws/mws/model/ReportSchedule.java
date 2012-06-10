@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -126,7 +127,7 @@ public class ReportSchedule {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getScheduledDate() {
@@ -138,7 +139,7 @@ public class ReportSchedule {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setScheduledDate(XMLGregorianCalendar value) {

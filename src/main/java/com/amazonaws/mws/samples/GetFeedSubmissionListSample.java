@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -44,10 +45,11 @@ public class GetFeedSubmissionListSample {
          * Access Key ID and Secret Access Key ID, obtained from:
          * http://aws.amazon.com
          ***********************************************************************/
-        final String accessKeyId = "AKIAJDR2N32XSM5HT2ZQ";
-        final String secretAccessKey = "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";
-        final String appName = "test_app";
-        final String appVersion = "1.0";
+        final String accessKeyId = "<Your Access Key ID>";
+        final String secretAccessKey = "<Your Secret Access Key>";
+
+        final String appName = "<Your Application or Company Name>";
+        final String appVersion = "<Your Application Version or Build Number or Release Date>";
 
         MarketplaceWebServiceConfig config = new MarketplaceWebServiceConfig();
 
@@ -67,7 +69,7 @@ public class GetFeedSubmissionListSample {
         // Japan
         // config.setServiceURL("https://mws.amazonservices.jp");
         // China
-        config.setServiceURL("https://mws.amazonservices.com.cn");
+        // config.setServiceURL("https://mws.amazonservices.com.cn");
         // Canada
         // config.setServiceURL("https://mws.amazonservices.ca");
         // India
@@ -113,7 +115,7 @@ public class GetFeedSubmissionListSample {
          * Marketplace and Merchant IDs are required parameters for all 
          * Marketplace Web Service calls.
          ***********************************************************************/
-        final String merchantId = "AAHKV2X7AFYLW";
+        final String merchantId = "<Your Merchant ID>";
 
         GetFeedSubmissionListRequest request = new GetFeedSubmissionListRequest();
         request.setMerchant( merchantId );
@@ -161,7 +163,7 @@ public class GetFeedSubmissionListSample {
                     System.out.print("                " + getFeedSubmissionListResult.isHasNext());
                     System.out.println();
                 }
-                List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionListResult.getFeedSubmissionInfoList();
+                java.util.List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionListResult.getFeedSubmissionInfoList();
                 for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
                     System.out.print("            FeedSubmissionInfo");
                     System.out.println();

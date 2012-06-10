@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -159,7 +160,7 @@ public class GetReportListByNextTokenSample {
                     System.out.print("                " + getReportListByNextTokenResult.isHasNext());
                     System.out.println();
                 }
-                List<ReportInfo> reportInfoList = getReportListByNextTokenResult.getReportInfoList();
+                java.util.List<ReportInfo> reportInfoList = getReportListByNextTokenResult.getReportInfoList();
                 for (ReportInfo reportInfo : reportInfoList) {
                     System.out.print("            ReportInfo");
                     System.out.println();

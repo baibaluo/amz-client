@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -170,7 +171,7 @@ public class ReportInfo {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getAvailableDate() {
@@ -182,7 +183,7 @@ public class ReportInfo {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setAvailableDate(XMLGregorianCalendar value) {
@@ -218,7 +219,7 @@ public class ReportInfo {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getAcknowledgedDate() {
@@ -230,7 +231,7 @@ public class ReportInfo {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setAcknowledgedDate(XMLGregorianCalendar value) {

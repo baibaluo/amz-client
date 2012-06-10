@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -99,7 +100,7 @@ public class UpdateReportAcknowledgementsResult {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonaws.mws.model.ReportInfo }
+     * {@link ReportInfo }
      * 
      * 
      */
@@ -149,7 +150,7 @@ public class UpdateReportAcknowledgementsResult {
      * 
      * @param reportInfo
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.ReportInfo }
+     *     {@link ReportInfo }
      *     
      */
     public void setReportInfoList(List<ReportInfo> reportInfo) {
@@ -172,7 +173,7 @@ public class UpdateReportAcknowledgementsResult {
             xml.append(getCount() + "");
             xml.append("</Count>");
         }
-        List<ReportInfo> reportInfoList = getReportInfoList();
+        java.util.List<ReportInfo> reportInfoList = getReportInfoList();
         for (ReportInfo reportInfo : reportInfoList) {
             xml.append("<ReportInfo>");
             xml.append(reportInfo.toXMLFragment());
@@ -237,7 +238,7 @@ public class UpdateReportAcknowledgementsResult {
         if (isSetReportInfoList()) {
             if (!first) json.append(", ");
             json.append("\"ReportInfo\" : [");
-            List<ReportInfo> reportInfoList = getReportInfoList();
+            java.util.List<ReportInfo> reportInfoList = getReportInfoList();
             for (ReportInfo reportInfo : reportInfoList) {
                 if (reportInfoList.indexOf(reportInfo) > 0) json.append(", ");
                 json.append("{");

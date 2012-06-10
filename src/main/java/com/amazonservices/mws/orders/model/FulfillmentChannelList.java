@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class FulfillmentChannelList {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonservices.mws.orders.model.FulfillmentChannelEnum }
+     * {@link FulfillmentChannelEnum }
      * 
      * 
      */
@@ -110,7 +111,7 @@ public class FulfillmentChannelList {
      * 
      * @param channel
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.FulfillmentChannelEnum }
+     *     {@link FulfillmentChannelEnum }
      *     
      */
     public void setChannel(List<FulfillmentChannelEnum> channel) {

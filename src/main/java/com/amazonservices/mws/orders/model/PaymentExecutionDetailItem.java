@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -62,7 +63,7 @@ public class PaymentExecutionDetailItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getPayment() {
@@ -74,7 +75,7 @@ public class PaymentExecutionDetailItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setPayment(Money value) {

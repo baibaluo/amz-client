@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import javax.xml.bind.annotation.XmlAccessType;

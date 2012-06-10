@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -136,7 +137,7 @@ public class UpdateReportAcknowledgementsRequest {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonaws.mws.model.IdList }
+     *     {@link IdList }
      *     
      */
     public IdList getReportIdList() {
@@ -148,7 +149,7 @@ public class UpdateReportAcknowledgementsRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.IdList }
+     *     {@link IdList }
      *     
      */
     public void setReportIdList(IdList value) {

@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -291,7 +292,7 @@ public class Order {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.FulfillmentChannelEnum }
+     *     {@link FulfillmentChannelEnum }
      *     
      */
     public FulfillmentChannelEnum getFulfillmentChannel() {
@@ -303,7 +304,7 @@ public class Order {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.FulfillmentChannelEnum }
+     *     {@link FulfillmentChannelEnum }
      *     
      */
     public void setFulfillmentChannel(FulfillmentChannelEnum value) {
@@ -403,7 +404,7 @@ public class Order {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Address }
+     *     {@link Address }
      *     
      */
     public Address getShippingAddress() {
@@ -415,7 +416,7 @@ public class Order {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Address }
+     *     {@link Address }
      *     
      */
     public void setShippingAddress(Address value) {
@@ -431,7 +432,7 @@ public class Order {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getOrderTotal() {
@@ -443,7 +444,7 @@ public class Order {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setOrderTotal(Money value) {

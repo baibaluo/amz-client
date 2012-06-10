@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -149,7 +150,7 @@ public class RequestReportRequest {
      * 
      * @deprecated Not used anymore.  MWS ignores this parameter, but it is left
      * in here for backwards compatibility.  
-     * Use {@link #setMarketplaceIdList(com.amazonaws.mws.model.IdList)} instead.
+     * Use {@link #setMarketplaceIdList(IdList)} instead.
      * @param value
      *     allowed object is
      *     {@link String }
@@ -212,7 +213,7 @@ public class RequestReportRequest {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getStartDate() {
@@ -224,7 +225,7 @@ public class RequestReportRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setStartDate(XMLGregorianCalendar value) {
@@ -240,7 +241,7 @@ public class RequestReportRequest {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getEndDate() {
@@ -252,7 +253,7 @@ public class RequestReportRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setEndDate(XMLGregorianCalendar value) {

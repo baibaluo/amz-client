@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class MessageList {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonservices.mws.orders.model.Message }
+     * {@link Message }
      * 
      * 
      */
@@ -110,7 +111,7 @@ public class MessageList {
      * 
      * @param message
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Message }
+     *     {@link Message }
      *     
      */
     public void setMessage(List<Message> message) {

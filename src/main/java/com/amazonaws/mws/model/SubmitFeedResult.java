@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -59,7 +60,7 @@ public class SubmitFeedResult {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonaws.mws.model.FeedSubmissionInfo }
+     *     {@link FeedSubmissionInfo }
      *     
      */
     public FeedSubmissionInfo getFeedSubmissionInfo() {
@@ -71,7 +72,7 @@ public class SubmitFeedResult {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.FeedSubmissionInfo }
+     *     {@link FeedSubmissionInfo }
      *     
      */
     public void setFeedSubmissionInfo(FeedSubmissionInfo value) {

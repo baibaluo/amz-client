@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.io.InputStream;
@@ -115,7 +116,7 @@ public class SubmitFeedRequest {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonaws.mws.model.ContentType }
+     *     {@link ContentType }
      *     
      */
     public ContentType getContentType() {
@@ -140,7 +141,7 @@ public class SubmitFeedRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.ContentType }
+     *     {@link ContentType }
      *     
      */
     public void setContentType(ContentType value) {
@@ -170,7 +171,7 @@ public class SubmitFeedRequest {
      * Sets the value of the marketplace property.
      * @deprecated Not used anymore.  MWS ignores this parameter, but it is left
      * in here for backwards compatibility.
-     * Use {@link #setMarketplaceIdList(com.amazonaws.mws.model.IdList)} instead.
+     * Use {@link #setMarketplaceIdList(IdList)} instead.
      * @param value
      *     allowed object is
      *     {@link String }

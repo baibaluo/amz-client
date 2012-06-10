@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -316,7 +317,7 @@ public class ListOrdersRequest {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.FulfillmentChannelList }
+     *     {@link FulfillmentChannelList }
      *     
      */
     public FulfillmentChannelList getFulfillmentChannel() {
@@ -328,7 +329,7 @@ public class ListOrdersRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.FulfillmentChannelList }
+     *     {@link FulfillmentChannelList }
      *     
      */
     public void setFulfillmentChannel(FulfillmentChannelList value) {

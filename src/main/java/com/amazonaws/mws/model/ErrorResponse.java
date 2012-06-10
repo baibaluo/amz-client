@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -79,7 +80,7 @@ public class ErrorResponse {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonaws.mws.model.Error }
+     * {@link Error }
      * 
      * 
      */
@@ -157,7 +158,7 @@ public class ErrorResponse {
      * 
      * @param error
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.Error }
+     *     {@link Error }
      *     
      */
     public void setError(List<Error> error) {
@@ -191,7 +192,7 @@ public class ErrorResponse {
     public String toXML() {
         StringBuffer xml = new StringBuffer();
         xml.append("<ErrorResponse xmlns=\"http://mws.amazonaws.com/doc/2009-01-01/\">");
-        List<Error> errorList = getError();
+        java.util.List<Error> errorList = getError();
         for (Error error : errorList) {
             xml.append("<Error>");
             xml.append(error.toXMLFragment());
@@ -257,7 +258,7 @@ public class ErrorResponse {
         if (isSetError()) {
             if (!first) json.append(", ");
             json.append("\"Error\" : [");
-            List<Error> errorList = getError();
+            java.util.List<Error> errorList = getError();
             for (Error error : errorList) {
                 if (errorList.indexOf(error) > 0) json.append(", ");
                 json.append("{");

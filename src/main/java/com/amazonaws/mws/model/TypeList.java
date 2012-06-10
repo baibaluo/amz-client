@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -128,7 +129,7 @@ public class TypeList {
      */
     protected String toXMLFragment() {
         StringBuffer xml = new StringBuffer();
-        List<String> typeList  =  getType();
+        java.util.List<String> typeList  =  getType();
         for (String type : typeList) { 
             xml.append("<Type>");
             xml.append(escapeXML(type));
@@ -186,7 +187,7 @@ public class TypeList {
         if (isSetType()) {
             if (!first) json.append(", ");
             json.append("\"Type\" : [");
-            List<String> typeList  =  getType();
+            java.util.List<String> typeList  =  getType();
             for (String type : typeList) {
                 if (typeList.indexOf(type) > 0) json.append(", ");
                     json.append(quoteJSON(type));

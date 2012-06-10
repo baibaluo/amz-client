@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -69,7 +70,7 @@ public class Error {
     @XmlElement(name = "Message", required = true)
     protected String message;
     @XmlElement(name = "Detail", required = true)
-    protected Detail detail;
+    protected Error.Detail detail;
 
     /**
      * Default constructor
@@ -83,7 +84,7 @@ public class Error {
      * Value constructor
      * 
      */
-    public Error(final String type, final String code, final String message, final Detail detail) {
+    public Error(final String type, final String code, final String message, final Error.Detail detail) {
         this.type = type;
         this.code = code;
         this.message = message;
@@ -179,10 +180,10 @@ public class Error {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonaws.mws.model.Error.Detail }
+     *     {@link Error.Detail }
      *     
      */
-    public Detail getDetail() {
+    public Error.Detail getDetail() {
         return detail;
     }
 
@@ -191,10 +192,10 @@ public class Error {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.Error.Detail }
+     *     {@link Error.Detail }
      *     
      */
-    public void setDetail(Detail value) {
+    public void setDetail(Error.Detail value) {
         this.detail = value;
     }
 
@@ -245,7 +246,7 @@ public class Error {
      * @return
      *     this instance
      */
-    public Error withDetail(Detail value) {
+    public Error withDetail(Error.Detail value) {
         setDetail(value);
         return this;
     }
@@ -315,7 +316,7 @@ public class Error {
          * 
          * <p>
          * Objects of the following type(s) are allowed in the list
-         * {@link org.w3c.dom.Element }
+         * {@link Element }
          * {@link Object }
          * 
          * 
@@ -342,7 +343,7 @@ public class Error {
          * @return
          *     this instance
          */
-        public Detail withAny(Object... values) {
+        public Error.Detail withAny(Object... values) {
             for (Object value: values) {
                 getAny().add(value);
             }
@@ -354,7 +355,7 @@ public class Error {
          * 
          * @param any
          *     allowed object is
-         *     {@link org.w3c.dom.Element }
+         *     {@link Element }
          *     {@link Object }
          *     
          */
@@ -391,7 +392,7 @@ public class Error {
             xml.append("</Message>");
         }
         if (isSetDetail()) {
-            Detail  detail = getDetail();
+            Error.Detail  detail = getDetail();
             xml.append("<Detail>");
             xml.append(detail.toString());
 
@@ -470,7 +471,7 @@ public class Error {
         if (isSetDetail()) {
             if (!first) json.append(", ");
             json.append("\"Detail\" : {");
-            Detail  detail = getDetail();
+            Error.Detail  detail = getDetail();
 
 
             json.append(detail.toString());

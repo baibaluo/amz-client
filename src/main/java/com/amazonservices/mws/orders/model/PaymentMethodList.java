@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class PaymentMethodList {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
-     * {@link com.amazonservices.mws.orders.model.PaymentMethodEnum }
+     * {@link PaymentMethodEnum }
      * 
      * 
      */
@@ -110,7 +111,7 @@ public class PaymentMethodList {
      * 
      * @param method
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.PaymentMethodEnum }
+     *     {@link PaymentMethodEnum }
      *     
      */
     public void setMethod(List<PaymentMethodEnum> method) {

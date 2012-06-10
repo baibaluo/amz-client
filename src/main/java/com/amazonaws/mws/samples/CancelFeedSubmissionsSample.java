@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -166,7 +167,7 @@ public class CancelFeedSubmissionsSample {
                     System.out.print("                " + cancelFeedSubmissionsResult.getCount());
                     System.out.println();
                 }
-                List<FeedSubmissionInfo> feedSubmissionInfoList = cancelFeedSubmissionsResult.getFeedSubmissionInfoList();
+                java.util.List<FeedSubmissionInfo> feedSubmissionInfoList = cancelFeedSubmissionsResult.getFeedSubmissionInfoList();
                 for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
                     System.out.print("            FeedSubmissionInfo");
                     System.out.println();

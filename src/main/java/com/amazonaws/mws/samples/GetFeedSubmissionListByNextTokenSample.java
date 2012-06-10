@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws.samples;
 
 import java.util.List;
@@ -159,7 +160,7 @@ public class GetFeedSubmissionListByNextTokenSample {
                     System.out.print("                " + getFeedSubmissionListByNextTokenResult.isHasNext());
                     System.out.println();
                 }
-                List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionListByNextTokenResult.getFeedSubmissionInfoList();
+                java.util.List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionListByNextTokenResult.getFeedSubmissionInfoList();
                 for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
                     System.out.print("            FeedSubmissionInfo");
                     System.out.println();

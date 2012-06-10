@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -272,7 +273,7 @@ public class GetFeedSubmissionListRequest {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getSubmittedFromDate() {
@@ -284,7 +285,7 @@ public class GetFeedSubmissionListRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setSubmittedFromDate(XMLGregorianCalendar value) {
@@ -300,7 +301,7 @@ public class GetFeedSubmissionListRequest {
      * 
      * @return
      *     possible object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public XMLGregorianCalendar getSubmittedToDate() {
@@ -312,7 +313,7 @@ public class GetFeedSubmissionListRequest {
      * 
      * @param value
      *     allowed object is
-     *     {@link javax.xml.datatype.XMLGregorianCalendar }
+     *     {@link XMLGregorianCalendar }
      *     
      */
     public void setSubmittedToDate(XMLGregorianCalendar value) {

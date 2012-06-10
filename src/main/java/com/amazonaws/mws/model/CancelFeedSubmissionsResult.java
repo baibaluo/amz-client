@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -172,7 +173,7 @@ public class CancelFeedSubmissionsResult {
             xml.append(getCount() + "");
             xml.append("</Count>");
         }
-        List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionInfoList();
+        java.util.List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionInfoList();
         for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
             xml.append("<FeedSubmissionInfo>");
             xml.append(feedSubmissionInfo.toXMLFragment());
@@ -237,7 +238,7 @@ public class CancelFeedSubmissionsResult {
         if (isSetFeedSubmissionInfoList()) {
             if (!first) json.append(", ");
             json.append("\"FeedSubmissionInfo\" : [");
-            List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionInfoList();
+            java.util.List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionInfoList();
             for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
                 if (feedSubmissionInfoList.indexOf(feedSubmissionInfo) > 0) json.append(", ");
                 json.append("{");

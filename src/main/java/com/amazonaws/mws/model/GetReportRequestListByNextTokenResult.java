@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import java.util.ArrayList;
@@ -222,7 +223,7 @@ public class GetReportRequestListByNextTokenResult {
             xml.append(isHasNext() + "");
             xml.append("</HasNext>");
         }
-        List<ReportRequestInfo> reportRequestInfoList = getReportRequestInfoList();
+        java.util.List<ReportRequestInfo> reportRequestInfoList = getReportRequestInfoList();
         for (ReportRequestInfo reportRequestInfo : reportRequestInfoList) {
             xml.append("<ReportRequestInfo>");
             xml.append(reportRequestInfo.toXMLFragment());
@@ -294,7 +295,7 @@ public class GetReportRequestListByNextTokenResult {
         if (isSetReportRequestInfoList()) {
             if (!first) json.append(", ");
             json.append("\"ReportRequestInfo\" : [");
-            List<ReportRequestInfo> reportRequestInfoList = getReportRequestInfoList();
+            java.util.List<ReportRequestInfo> reportRequestInfoList = getReportRequestInfoList();
             for (ReportRequestInfo reportRequestInfo : reportRequestInfoList) {
                 if (reportRequestInfoList.indexOf(reportRequestInfo) > 0) json.append(", ");
                 json.append("{");

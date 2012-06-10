@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import javax.xml.bind.annotation.XmlRegistry;
@@ -45,7 +46,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrdersByNextTokenRequest }
+     * Create an instance of {@link ListOrdersByNextTokenRequest }
      * 
      */
     public ListOrdersByNextTokenRequest createListOrdersByNextTokenRequest() {
@@ -53,7 +54,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrderItemsByNextTokenResponse }
+     * Create an instance of {@link ListOrderItemsByNextTokenResponse }
      * 
      */
     public ListOrderItemsByNextTokenResponse createListOrderItemsByNextTokenResponse() {
@@ -61,7 +62,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrderItemsByNextTokenRequest }
+     * Create an instance of {@link ListOrderItemsByNextTokenRequest }
      * 
      */
     public ListOrderItemsByNextTokenRequest createListOrderItemsByNextTokenRequest() {
@@ -69,7 +70,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.Money }
+     * Create an instance of {@link Money }
      * 
      */
     public Money createMoney() {
@@ -77,7 +78,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.GetOrderResult }
+     * Create an instance of {@link GetOrderResult }
      * 
      */
     public GetOrderResult createGetOrderResult() {
@@ -85,7 +86,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.GetServiceStatusResult }
+     * Create an instance of {@link GetServiceStatusResult }
      * 
      */
     public GetServiceStatusResult createGetServiceStatusResult() {
@@ -93,7 +94,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrdersResponse }
+     * Create an instance of {@link ListOrdersResponse }
      * 
      */
     public ListOrdersResponse createListOrdersResponse() {
@@ -101,7 +102,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrdersByNextTokenResponse }
+     * Create an instance of {@link ListOrdersByNextTokenResponse }
      * 
      */
     public ListOrdersByNextTokenResponse createListOrdersByNextTokenResponse() {
@@ -109,7 +110,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrdersRequest }
+     * Create an instance of {@link ListOrdersRequest }
      * 
      */
     public ListOrdersRequest createListOrdersRequest() {
@@ -117,7 +118,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.Error.Detail }
+     * Create an instance of {@link Error.Detail }
      * 
      */
     public Error.Detail createErrorDetail() {
@@ -133,7 +134,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.Address }
+     * Create an instance of {@link Address }
      * 
      */
     public Address createAddress() {
@@ -157,7 +158,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrderItemsResponse }
+     * Create an instance of {@link ListOrderItemsResponse }
      * 
      */
     public ListOrderItemsResponse createListOrderItemsResponse() {
@@ -165,7 +166,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.GetOrderResponse }
+     * Create an instance of {@link GetOrderResponse }
      * 
      */
     public GetOrderResponse createGetOrderResponse() {
@@ -181,7 +182,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrdersByNextTokenResult }
+     * Create an instance of {@link ListOrdersByNextTokenResult }
      * 
      */
     public ListOrdersByNextTokenResult createListOrdersByNextTokenResult() {
@@ -197,7 +198,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.FulfillmentChannelList }
+     * Create an instance of {@link FulfillmentChannelList }
      * 
      */
     public FulfillmentChannelList createFulfillmentChannelList() {
@@ -205,7 +206,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.MessageList }
+     * Create an instance of {@link MessageList }
      * 
      */
     public MessageList createMessageList() {
@@ -213,7 +214,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.MarketplaceIdList }
+     * Create an instance of {@link MarketplaceIdList }
      * 
      */
     public MarketplaceIdList createMarketplaceIdList() {
@@ -221,7 +222,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.GetOrderRequest }
+     * Create an instance of {@link GetOrderRequest }
      * 
      */
     public GetOrderRequest createGetOrderRequest() {
@@ -229,7 +230,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.GetServiceStatusResponse }
+     * Create an instance of {@link GetServiceStatusResponse }
      * 
      */
     public GetServiceStatusResponse createGetServiceStatusResponse() {
@@ -237,7 +238,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.GetServiceStatusRequest }
+     * Create an instance of {@link GetServiceStatusRequest }
      * 
      */
     public GetServiceStatusRequest createGetServiceStatusRequest() {
@@ -245,7 +246,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrderItemsRequest }
+     * Create an instance of {@link ListOrderItemsRequest }
      * 
      */
     public ListOrderItemsRequest createListOrderItemsRequest() {
@@ -261,7 +262,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrderItemsResult }
+     * Create an instance of {@link ListOrderItemsResult }
      * 
      */
     public ListOrderItemsResult createListOrderItemsResult() {
@@ -269,7 +270,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ErrorResponse }
+     * Create an instance of {@link ErrorResponse }
      * 
      */
     public ErrorResponse createErrorResponse() {
@@ -285,7 +286,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrderItemsByNextTokenResult }
+     * Create an instance of {@link ListOrderItemsByNextTokenResult }
      * 
      */
     public ListOrderItemsByNextTokenResult createListOrderItemsByNextTokenResult() {
@@ -293,7 +294,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.ListOrdersResult }
+     * Create an instance of {@link ListOrdersResult }
      * 
      */
     public ListOrdersResult createListOrdersResult() {
@@ -309,7 +310,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.Error }
+     * Create an instance of {@link Error }
      * 
      */
     public Error createError() {
@@ -325,7 +326,7 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link com.amazonservices.mws.orders.model.Message }
+     * Create an instance of {@link Message }
      * 
      */
     public Message createMessage() {

@@ -1,3 +1,4 @@
+
 package com.amazonaws.mws.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -92,7 +93,7 @@ public class UpdateReportAcknowledgementsResponse {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonaws.mws.model.ResponseMetadata }
+     *     {@link ResponseMetadata }
      *     
      */
     public ResponseMetadata getResponseMetadata() {
@@ -104,7 +105,7 @@ public class UpdateReportAcknowledgementsResponse {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonaws.mws.model.ResponseMetadata }
+     *     {@link ResponseMetadata }
      *     
      */
     public void setResponseMetadata(ResponseMetadata value) {

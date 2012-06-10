@@ -1,3 +1,4 @@
+
 package com.amazonservices.mws.orders.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -307,7 +308,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getItemPrice() {
@@ -319,7 +320,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setItemPrice(Money value) {
@@ -335,7 +336,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getShippingPrice() {
@@ -347,7 +348,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setShippingPrice(Money value) {
@@ -363,7 +364,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getGiftWrapPrice() {
@@ -375,7 +376,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setGiftWrapPrice(Money value) {
@@ -391,7 +392,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getItemTax() {
@@ -403,7 +404,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setItemTax(Money value) {
@@ -419,7 +420,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getShippingTax() {
@@ -431,7 +432,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setShippingTax(Money value) {
@@ -447,7 +448,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getGiftWrapTax() {
@@ -459,7 +460,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setGiftWrapTax(Money value) {
@@ -475,7 +476,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getShippingDiscount() {
@@ -487,7 +488,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setShippingDiscount(Money value) {
@@ -503,7 +504,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getPromotionDiscount() {
@@ -515,7 +516,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setPromotionDiscount(Money value) {
@@ -559,7 +560,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getCODFee() {
@@ -571,7 +572,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setCODFee(Money value) {
@@ -587,7 +588,7 @@ public class OrderItem {
      * 
      * @return
      *     possible object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public Money getCODFeeDiscount() {
@@ -599,7 +600,7 @@ public class OrderItem {
      * 
      * @param value
      *     allowed object is
-     *     {@link com.amazonservices.mws.orders.model.Money }
+     *     {@link Money }
      *     
      */
     public void setCODFeeDiscount(Money value) {

@@ -16,6 +16,7 @@
  */
 
 
+
 package com.amazonaws.mws;
 
 import java.lang.reflect.Method;
@@ -2288,7 +2289,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         byte[] buffer = new byte[8192];
         while( dis.read( buffer ) > 0 );
             
-        String md5Content = new String( Base64.encodeBase64(dis.getMessageDigest().digest()) );
+        String md5Content = new String( org.apache.commons.codec.binary.Base64.encodeBase64(dis.getMessageDigest().digest()) );           
         
         // Effectively resets the stream to be beginning of the file via a FileChannel.
         fis.getChannel().position( 0 );
@@ -2320,7 +2321,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
     /**
      * Exponential sleep on failed request. Sleeps and returns true if retry needed
      * @param retries current retry
-     * @throws InterruptedException
+     * @throws java.lang.InterruptedException
      */
     private boolean pauseIfRetryNeeded(int retries)
           throws InterruptedException {
@@ -2460,9 +2461,9 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         data.append("\n");
         Map<String, String> sorted = new TreeMap<String, String>();
         sorted.putAll(parameters);
-        Iterator<Entry<String, String>> pairs = sorted.entrySet().iterator();
+        Iterator<Map.Entry<String, String>> pairs = sorted.entrySet().iterator();
         while (pairs.hasNext()) {
-            Entry<String, String> pair = pairs.next();
+            Map.Entry<String, String> pair = pairs.next();
             String key = pair.getKey();
             data.append(urlEncode(key));
             data.append("=");
@@ -2574,7 +2575,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportTypeList()) {
             TypeList  reportTypeList = request.getReportTypeList();
-            List<String> typeList  =  reportTypeList.getType();
+            java.util.List<String> typeList  =  reportTypeList.getType();
             for  (String type : typeList) { 
                 params.put("ReportTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
@@ -2618,7 +2619,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportIdList()) {
             IdList  reportIdList = request.getReportIdList();
-            List<String> idList  =  reportIdList.getId();
+            java.util.List<String> idList  =  reportIdList.getId();
             for  (String id : idList) { 
                 params.put("ReportIdList" + "." + "Id" + "."  + (idList.indexOf(id) + 1), id);
             }   
@@ -2676,7 +2677,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportTypeList()) {
             TypeList  reportTypeList = request.getReportTypeList();
-            List<String> typeList  =  reportTypeList.getType();
+            java.util.List<String> typeList  =  reportTypeList.getType();
             for  (String type : typeList) { 
                 params.put("ReportTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
@@ -2729,14 +2730,14 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetFeedSubmissionIdList()) {
             IdList  feedSubmissionIdList = request.getFeedSubmissionIdList();
-            List<String> idList  =  feedSubmissionIdList.getId();
+            java.util.List<String> idList  =  feedSubmissionIdList.getId();
             for  (String id : idList) { 
                 params.put("FeedSubmissionIdList" + "." + "Id" + "."  + (idList.indexOf(id) + 1), id);
             }   
         } 
         if (request.isSetFeedTypeList()) {
             TypeList  feedTypeList = request.getFeedTypeList();
-            List<String> typeList  =  feedTypeList.getType();
+            java.util.List<String> typeList  =  feedTypeList.getType();
             for  (String type : typeList) { 
                 params.put("FeedTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
@@ -2803,14 +2804,14 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetFeedTypeList()) {
             TypeList  feedTypeList = request.getFeedTypeList();
-            List<String> typeList  =  feedTypeList.getType();
+            java.util.List<String> typeList  =  feedTypeList.getType();
             for  (String type : typeList) { 
                 params.put("FeedTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
         } 
         if (request.isSetFeedProcessingStatusList()) {
             StatusList  feedProcessingStatusList = request.getFeedProcessingStatusList();
-            List<String> statusList  =  feedProcessingStatusList.getStatus();
+            java.util.List<String> statusList  =  feedProcessingStatusList.getStatus();
             for  (String status : statusList) { 
                 params.put("FeedProcessingStatusList" + "." + "Status" + "."  + (statusList.indexOf(status) + 1), status);
             }   
@@ -2840,21 +2841,21 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportRequestIdList()) {
             IdList  reportRequestIdList = request.getReportRequestIdList();
-            List<String> idList  =  reportRequestIdList.getId();
+            java.util.List<String> idList  =  reportRequestIdList.getId();
             for  (String id : idList) { 
                 params.put("ReportRequestIdList" + "." + "Id" + "."  + (idList.indexOf(id) + 1), id);
             }   
         } 
         if (request.isSetReportTypeList()) {
             TypeList  reportTypeList = request.getReportTypeList();
-            List<String> typeList  =  reportTypeList.getType();
+            java.util.List<String> typeList  =  reportTypeList.getType();
             for  (String type : typeList) { 
                 params.put("ReportTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
         } 
         if (request.isSetReportProcessingStatusList()) {
             StatusList  reportProcessingStatusList = request.getReportProcessingStatusList();
-            List<String> statusList  =  reportProcessingStatusList.getStatus();
+            java.util.List<String> statusList  =  reportProcessingStatusList.getStatus();
             for  (String status : statusList) { 
                 params.put("ReportProcessingStatusList" + "." + "Status" + "."  + (statusList.indexOf(status) + 1), status);
             }   
@@ -2888,7 +2889,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportTypeList()) {
             TypeList  reportTypeList = request.getReportTypeList();
-            List<String> typeList  =  reportTypeList.getType();
+            java.util.List<String> typeList  =  reportTypeList.getType();
             for  (String type : typeList) { 
                 params.put("ReportTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
@@ -2904,7 +2905,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportRequestIdList()) {
             IdList  reportRequestIdList = request.getReportRequestIdList();
-            List<String> idList  =  reportRequestIdList.getId();
+            java.util.List<String> idList  =  reportRequestIdList.getId();
             for  (String id : idList) { 
                 params.put("ReportRequestIdList" + "." + "Id" + "."  + (idList.indexOf(id) + 1), id);
             }   
@@ -2948,7 +2949,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetFeedSubmissionIdList()) {
             IdList  feedSubmissionIdList = request.getFeedSubmissionIdList();
-            List<String> idList  =  feedSubmissionIdList.getId();
+            java.util.List<String> idList  =  feedSubmissionIdList.getId();
             for  (String id : idList) { 
                 params.put("FeedSubmissionIdList" + "." + "Id" + "."  + (idList.indexOf(id) + 1), id);
             }   
@@ -2958,14 +2959,14 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetFeedTypeList()) {
             TypeList  feedTypeList = request.getFeedTypeList();
-            List<String> typeList  =  feedTypeList.getType();
+            java.util.List<String> typeList  =  feedTypeList.getType();
             for  (String type : typeList) { 
                 params.put("FeedTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
         } 
         if (request.isSetFeedProcessingStatusList()) {
             StatusList  feedProcessingStatusList = request.getFeedProcessingStatusList();
-            List<String> statusList  =  feedProcessingStatusList.getStatus();
+            java.util.List<String> statusList  =  feedProcessingStatusList.getStatus();
             for  (String status : statusList) { 
                 params.put("FeedProcessingStatusList" + "." + "Status" + "."  + (statusList.indexOf(status) + 1), status);
             }   
@@ -2995,21 +2996,21 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportRequestIdList()) {
             IdList  reportRequestIdList = request.getReportRequestIdList();
-            List<String> idList  =  reportRequestIdList.getId();
+            java.util.List<String> idList  =  reportRequestIdList.getId();
             for  (String id : idList) { 
                 params.put("ReportRequestIdList" + "." + "Id" + "."  + (idList.indexOf(id) + 1), id);
             }   
         } 
         if (request.isSetReportTypeList()) {
             TypeList  reportTypeList = request.getReportTypeList();
-            List<String> typeList  =  reportTypeList.getType();
+            java.util.List<String> typeList  =  reportTypeList.getType();
             for  (String type : typeList) { 
                 params.put("ReportTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
         } 
         if (request.isSetReportProcessingStatusList()) {
             StatusList  reportProcessingStatusList = request.getReportProcessingStatusList();
-            List<String> statusList  =  reportProcessingStatusList.getStatus();
+            java.util.List<String> statusList  =  reportProcessingStatusList.getStatus();
             for  (String status : statusList) { 
                 params.put("ReportProcessingStatusList" + "." + "Status" + "."  + (statusList.indexOf(status) + 1), status);
             }   
@@ -3108,14 +3109,14 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportTypeList()) {
             TypeList  reportTypeList = request.getReportTypeList();
-            List<String> typeList  =  reportTypeList.getType();
+            java.util.List<String> typeList  =  reportTypeList.getType();
             for  (String type : typeList) { 
                 params.put("ReportTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
         } 
         if (request.isSetReportProcessingStatusList()) {
             StatusList  reportProcessingStatusList = request.getReportProcessingStatusList();
-            List<String> statusList  =  reportProcessingStatusList.getStatus();
+            java.util.List<String> statusList  =  reportProcessingStatusList.getStatus();
             for  (String status : statusList) { 
                 params.put("ReportProcessingStatusList" + "." + "Status" + "."  + (statusList.indexOf(status) + 1), status);
             }   
@@ -3145,7 +3146,7 @@ public  class MarketplaceWebServiceClient implements MarketplaceWebService {
         }
         if (request.isSetReportTypeList()) {
             TypeList  reportTypeList = request.getReportTypeList();
-            List<String> typeList  =  reportTypeList.getType();
+            java.util.List<String> typeList  =  reportTypeList.getType();
             for  (String type : typeList) { 
                 params.put("ReportTypeList" + "." + "Type" + "."  + (typeList.indexOf(type) + 1), type);
             }   
