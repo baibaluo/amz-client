@@ -20,14 +20,15 @@ package com.amazonaws.mws.samples;
 
 import java.util.List;
 import java.util.ArrayList;
-
-import amazclient.AmazonConfig;
 import com.amazonaws.mws.*;
 import com.amazonaws.mws.model.*;
 import com.amazonaws.mws.mock.MarketplaceWebServiceMock;
 
 /**
+ *
  * Get Feed Submission List  Samples
+ *
+ *
  */
 public class GetFeedSubmissionListSample {
 
@@ -39,15 +40,90 @@ public class GetFeedSubmissionListSample {
      */
     public static void main(String... args) {
 
+        /************************************************************************
+         * Access Key ID and Secret Access Key ID, obtained from:
+         * http://aws.amazon.com
+         ***********************************************************************/
+        final String accessKeyId = "AKIAJDR2N32XSM5HT2ZQ";
+        final String secretAccessKey = "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";
+        final String appName = "test_app";
+        final String appVersion = "1.0";
 
-        MarketplaceWebService service = AmazonConfig.getMarketplaceWebService();
+        MarketplaceWebServiceConfig config = new MarketplaceWebServiceConfig();
+
+        /************************************************************************
+         * Uncomment to set the appropriate MWS endpoint.
+         ************************************************************************/
+        // US
+        // config.setServiceURL("https://mws.amazonservices.com");
+        // UK
+        // config.setServiceURL("https://mws.amazonservices.co.uk");
+        // Germany
+        // config.setServiceURL("https://mws.amazonservices.de");
+        // France
+        // config.setServiceURL("https://mws.amazonservices.fr");
+        // Italy
+        // config.setServiceURL("https://mws.amazonservices.it");
+        // Japan
+        // config.setServiceURL("https://mws.amazonservices.jp");
+        // China
+        config.setServiceURL("https://mws.amazonservices.com.cn");
+        // Canada
+        // config.setServiceURL("https://mws.amazonservices.ca");
+        // India
+        // config.setServiceURL("https://mws.amazonservices.in");
+
+        /************************************************************************
+         * You can also try advanced configuration options. Available options are:
+         *
+         *  - Signature Version
+         *  - Proxy Host and Proxy Port
+         *  - User Agent String to be sent to Marketplace Web Service
+         *
+         ***********************************************************************/
+
+        /************************************************************************
+         * Instantiate Http Client Implementation of Marketplace Web Service        
+         ***********************************************************************/
+
+        MarketplaceWebService service = new MarketplaceWebServiceClient(
+                accessKeyId, secretAccessKey, appName, appVersion, config);
+        // MarketplaceWebServiceConfig config = new MarketplaceWebServiceConfig();
+
+        // MarketplaceWebService service = new MarketplaceWebServiceClient(accessKeyId, secretAccessKey, config);
+
+        /************************************************************************
+         * Uncomment to try out Mock Service that simulates Marketplace Web Service 
+         * responses without calling Marketplace Web Service  service.
+         *
+         * Responses are loaded from local XML files. You can tweak XML files to
+         * experiment with various outputs during development
+         *
+         * XML files available under com/amazonaws/mws/mock tree
+         *
+         ***********************************************************************/
+        // MarketplaceWebService service = new MarketplaceWebServiceMock();
+
+        /************************************************************************
+         * Setup request parameters and uncomment invoke to try out 
+         * sample for Get Feed Submission List 
+         ***********************************************************************/
+
+        /************************************************************************
+         * Marketplace and Merchant IDs are required parameters for all 
+         * Marketplace Web Service calls.
+         ***********************************************************************/
+        final String merchantId = "AAHKV2X7AFYLW";
 
         GetFeedSubmissionListRequest request = new GetFeedSubmissionListRequest();
-        request.setMerchant(AmazonConfig.sellerId);
+        request.setMerchant( merchantId );
+
+        // @TODO: set request parameters here
 
         invokeGetFeedSubmissionList(service, request);
 
     }
+
 
 
     /**
@@ -63,16 +139,16 @@ public class GetFeedSubmissionListSample {
             GetFeedSubmissionListResponse response = service.getFeedSubmissionList(request);
 
 
-            System.out.println("GetFeedSubmissionList Action Response");
-            System.out.println("=============================================================================");
-            System.out.println();
+            System.out.println ("GetFeedSubmissionList Action Response");
+            System.out.println ("=============================================================================");
+            System.out.println ();
 
             System.out.print("    GetFeedSubmissionListResponse");
             System.out.println();
             if (response.isSetGetFeedSubmissionListResult()) {
                 System.out.print("        GetFeedSubmissionListResult");
                 System.out.println();
-                GetFeedSubmissionListResult getFeedSubmissionListResult = response.getGetFeedSubmissionListResult();
+                GetFeedSubmissionListResult  getFeedSubmissionListResult = response.getGetFeedSubmissionListResult();
                 if (getFeedSubmissionListResult.isSetNextToken()) {
                     System.out.print("            NextToken");
                     System.out.println();
@@ -85,7 +161,7 @@ public class GetFeedSubmissionListSample {
                     System.out.print("                " + getFeedSubmissionListResult.isHasNext());
                     System.out.println();
                 }
-                java.util.List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionListResult.getFeedSubmissionInfoList();
+                List<FeedSubmissionInfo> feedSubmissionInfoList = getFeedSubmissionListResult.getFeedSubmissionInfoList();
                 for (FeedSubmissionInfo feedSubmissionInfo : feedSubmissionInfoList) {
                     System.out.print("            FeedSubmissionInfo");
                     System.out.println();
@@ -130,7 +206,7 @@ public class GetFeedSubmissionListSample {
             if (response.isSetResponseMetadata()) {
                 System.out.print("        ResponseMetadata");
                 System.out.println();
-                ResponseMetadata responseMetadata = response.getResponseMetadata();
+                ResponseMetadata  responseMetadata = response.getResponseMetadata();
                 if (responseMetadata.isSetRequestId()) {
                     System.out.print("            RequestId");
                     System.out.println();
