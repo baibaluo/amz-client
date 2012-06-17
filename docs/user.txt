@@ -9,3 +9,23 @@ AYHKE雅其尚品休闲鞋 的卖家账户编号
 9907-8626-1545 的开发商账户编号和凭据*
 AWS 访问密钥： 	AKIAJDR2N32XSM5HT2ZQ
 密钥： 	7vkW22RPy7zdTQST3T37yDfW1bFOzoPbRooBiosg
+
+
+
+E:\tool\jaxb-ri-2.2.5\bin>xjc E:\code\amz-client\docs\Merchants-4.1.XSD\Product.
+xsd -d E:\code\model -p com.luo
+正在解析模式...
+[WARNING] 由于 EnumMemberSizeCap 限制, 简单类型 "ProcessorTypeValues" 未映射到枚
+举。面计数: 539, 当前限制: 256。可以使用定制设置属性 "typesafeEnumMaxMembers" 扩
+展该限制。
+  file:/E:/code/amz-client/docs/Merchants-4.1.XSD/amzn-base.xsd的第 816 行
+
+正在编译模式...
+[ERROR] 具有相同名称 "com.luo.BBFCRatingType" 的类/接口已在使用。请使用类定制设
+置来解决此冲突。
+  file:/E:/code/amz-client/docs/Merchants-4.1.XSD/Video.xsd的第 258 行
+
+[ERROR] (与上一错误相关) 在此处生成了其他 "BBFCRatingType"。
+  file:/E:/code/amz-client/docs/Merchants-4.1.XSD/SWVG.xsd的第 285 行
+
+无法生成代码。
